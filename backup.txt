@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serviços Empresariais com Sotaque Carioca e Capixaba | Soluções com Humor</title>
+  <meta name="description" content="Aqui vendemos até gelo para pinguim! Soluções para empresas com aquele toque de humor: hospedagem, VPS, crédito, consórcios e até cabelo com brilho. Atendimento sem enrolação!" />
+  <meta name="keywords" content="vendas com humor, soluções empresariais, crédito divertido, VPS com alegria, consórcio fácil, seguros sem drama, saúde capilar, tecnologia leve" />
+  <meta name="author" content="Equipe Conectada" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Soluções Empresariais com Bom Humor">
+  <meta property="og:description" content="Aqui o atendimento é rápido, as soluções são digitais e o papo é reto (com risada garantida).">
+  <meta property="og:image" content="https://via.placeholder.com/800x400.png?text=Serviços+Empresariais+com+Humor">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f8f6ff;
+      color: #222;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      background: lavender;
+      padding: 10px 15px;
+      border-radius: 6px;
+      min-width: 250px;
+      flex-grow: 1;
+    }
+
+    nav a {
+      color: #4b0082;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 15px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 15px 10px 0;
+      color: rebeccapurple;
+    }
+
+    #toggle-darkmode {
+      background-color: lavender;
+      color: rebeccapurple;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      animation: blink 1.5s infinite;
+      box-shadow: 0 0 10px rebeccapurple;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; box-shadow: 0 0 12px rebeccapurple; }
+      50% { opacity: 0.6; box-shadow: 0 0 20px rebeccapurple; }
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: rebeccapurple;
+      border-bottom: 2px solid lavender;
+      padding-bottom: 5px;
+    }
+
+    .link-button {
+      background-color: lavender;
+      color: #4b0082;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      margin: 5px;
+      box-shadow: 0 0 10px rebeccapurple;
+      transition: background-color 0.3s;
+    }
+
+    .link-button:hover {
+      background-color: #e6e0f8;
+    }
+
+    #unique-string {
+      font-family: monospace;
+      background: #222;
+      color: #eee;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 40px;
+      white-space: pre-wrap;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rebeccapurple;
+      transition: box-shadow 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: #1e1a2e;
+      color: #ddd;
+    }
+
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode nav {
+      background-color: rebeccapurple;
+      color: #fff;
+    }
+
+    body.dark-mode nav a {
+      color: #fff;
+    }
+
+    body.dark-mode #unique-string {
+      background: lavender;
+      color: #1e1a2e;
+    }
+
+    body.dark-mode .link-button {
+      background-color: lavender;
+      color: #1e1a2e;
+    }
+
+    body.dark-mode #toggle-darkmode {
+      background-color: lavender;
+      color: #1e1a2e;
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+  <header>
+    <nav>
+      <a href="#credito">Crédito</a>
+      <a href="#hospedagem">Hospedagem & VPS</a>
+      <a href="#seg">Seguros</a>
+      <a href="#cabelo">Saúde Capilar</a>
+      <a href="#airbnb">Comece hj mesmo Airbnb</a>
+    </nav>
+    <h1>Empresas Conectadas | Vitória e Rio de Janeiro</h1>
+    <button id="toggle-darkmode">Modo Claro</button>
+  </header>
+
+  <div class="video-container">
+    <iframe id="youtube-video" src="" title="Vídeo Informativo" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <div style="text-align:center; margin-bottom: 40px;">
+    <h2>Escolha um vídeo para assistir</h2>
+    <div id="video-buttons"></div>
+  </div>
+
+  <main>
+    <section id="airbnb">
+      <h2>Airbnb comece hj mesmo</h2>
+      <button class="link-button" data-url="https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g">Comece no Airbnb hoje mesmo</button>
+    </section>
+
+    <section id="hospedagem">
+      <h2>Hospedagem de Sites & VPS Profissional</h2>
+      <button class="link-button" data-url="https://hostinger.com.br/?REFERRALCODE=1VICTOR444">Hostinger</button>
+      <button class="link-button" data-url="https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/">VPS Profissional</button>
+      <button class="link-button" data-url="https://wa.me/5527999860405?text=Olá%2C%20tenho%20interesse%20em%20soluções%20de%20VPS%20e%20ERP.">Outras Opções</button>
+    </section>
+
+    <section id="seg">
+      <h2>Consórcios & Seguros</h2>
+      <button class="link-button" data-url="https://wa.me/5527999497001?text=ola%20quero%20saber%20sobre%20seguro%20e%20consorcio">Fale com um Consultor</button>
+    </section>
+
+    <section id="credito">
+      <h2>Crédito para Empresas</h2>
+      <button class="link-button" data-url="https://geocredibnkvitoria.com/">Simular Crédito</button>
+    </section>
+
+    <section id="cabelo">
+      <h2>Tratamentos Capilares</h2>
+      <button class="link-button" data-url="https://www.larissasaib.com.br/">Tricologia & Estética</button>
+    </section>
+
+    <div id="unique-string"></div>
+  </main>
+
+  <script>
+    const youtubeVideos = [
+      {id:"6GIf0P6QEwM",titulo:"DK Pistola - Comunidade do Mundo do Pirulito"},
+      {id:"BG7M7lWqUtM",titulo:"DK PISTOLA - PSN PLUS DE SETEMBRO - LEGO NO RABO DO POVO!"},
+      {id:"wdVE2lsLuC0",titulo:"LIVE DA PENITENCIARIA CHEIA DE SPAM - 05/07/2025"},
+      {id:"Dx18nVRBdBE",titulo:"RICA GAMES JOGANDO DARK SALS 🧂 3 E SERÁ QUE DEU CALOTE????"},
+      {id:"yaiYalaV30I",titulo:"rica você ja tentou se suicidar"},
+      {id:"TXN_r4Bwd6k",titulo:"RICA GAMES BEBADO REVOLTADO E CHEIRADASSO PARTE 2"},
+      {id:"-3_5OLVrcKE",titulo:"Cadê a sua gratidão Rica Games?"},
+      { id: "N04KYA0Dej0", titulo: "Rodízio de Linguiça | Câmeras Escondidas" },
+      { id: "295iwO2BHV4", titulo: "Pizza Mordida | Câmeras Escondidas" },
+      { id: "dMsc3fyC6KQ", titulo: "Seguro Obrigatório: Pegadinha na Chibia" },
+      {id:"bJVvbeC7OEs&t=92s",titulo:"RICA GAMES AMEAÇA OS BENTOS CARNEIROS E CHAMA RENAN DE LADRÃO"}
+    ];
+
+    function gerarStringUnica(tamanho = 120) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*-_=+{}[]<>?';
+      let resultado = '';
+      for (let i = 0; i < tamanho; i++) {
+        resultado += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return resultado;
+    }
+
+    function carregarVideo(id) {
+      const iframe = document.getElementById("youtube-video");
+      iframe.src = `https://www.youtube.com/embed/${id}?rel=0`;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("unique-string").textContent =
+        "Identificador único:\n" + gerarStringUnica();
+
+      carregarVideo(youtubeVideos[0].id);
+
+      const container = document.getElementById("video-buttons");
+      youtubeVideos.forEach(video => {
+        const btn = document.createElement("button");
+        btn.textContent = video.titulo;
+        btn.className = "link-button";
+        btn.style.margin = "8px";
+        btn.addEventListener("click", () => carregarVideo(video.id));
+        container.appendChild(btn);
+      });
+
+      document.querySelectorAll(".link-button[data-url]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const url = btn.getAttribute("data-url");
+          window.open(url, "_blank");
+        });
+      });
+    });
+
+    const toggleBtn = document.getElementById("toggle-darkmode");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "Modo Claro" : "Modo Escuro";
+    });
+  </script>
+</body>
+</html>
